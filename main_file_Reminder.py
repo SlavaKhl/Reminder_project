@@ -5,13 +5,13 @@ import datetime
 import time
 
 window = Tk()
-window.title("Напоминалка")
+window.title("Напоминание")
 window.geometry("400x250")
 
 e = Entry(window, font=("Arial", 20))
 e.pack(pady=20)
 
-btn = Button(window, font=("Arial", 20), text="установить напоминание")
+btn = Button(window, font=("Arial", 20), text="Установить напоминание")
 btn.pack()
 
 window.mainloop()
