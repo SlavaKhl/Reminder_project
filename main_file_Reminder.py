@@ -10,10 +10,10 @@ window.title("Напоминание")
 window.geometry("400x250")
 window.iconbitmap(default="alarm_reminder.ico")
 
-e = Entry(window, font=("Arial", 20))
+e = Entry(window, font=("Comic Sans MS", 20))
 e.pack(pady=20)
 
-btn = Button(window, font=("Arial", 20), text="Установить напоминание")
+btn = Button(window, font=("Comic Sans MS", 20), text="Установить напоминание")
 btn.pack()
 
 window.mainloop()
