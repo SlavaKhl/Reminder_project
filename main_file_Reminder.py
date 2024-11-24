@@ -1,3 +1,4 @@
+from email.policy import default
 from tkinter import *
 from tkinter import messagebox as mb
 #import pygame
@@ -7,6 +8,7 @@ import time
 window = Tk()
 window.title("Напоминание")
 window.geometry("400x250")
+window.iconbitmap(default="alarm_reminder.ico")
 
 e = Entry(window, font=("Arial", 20))
 e.pack(pady=20)
