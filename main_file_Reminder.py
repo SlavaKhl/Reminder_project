@@ -16,5 +16,8 @@ e.pack(pady=20)
 btn = Button(window, font=("Comic Sans MS", 20), text="Установить напоминание")
 btn.pack()
 
+t_m = Label(window, font=("Comic Sands MS", 20))
+t_m.pack(pady=20)
+
 window.mainloop()
 
