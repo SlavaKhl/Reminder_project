@@ -6,6 +6,8 @@ import pygame
 import time
 
 
+t = None
+
 def set():
     global t
     rem = sd.askstring("Время напоминания", "Введите время в формате ЧЧ:ММ (24-часовой формат)")
@@ -22,6 +24,17 @@ def set():
             label.config(text=f"Напоминание установлено на: {hour:02}:{minute:02}")
         except ValueError:
             mb.showerror("Ошибка", "Неверный формат времени")
+
+
+def check():
+    global t
+    if t:
+        now = time.time()
+        if now >= t:
+            play_snd()
+            t = None
+    window.after(10000, check)
+
 
 
 window = Tk()
