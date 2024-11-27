@@ -6,7 +6,7 @@ import pygame
 import time
 
 
-t = None
+t = 0
 
 def set():
     global t
@@ -49,6 +49,6 @@ label.pack(pady=10)
 set_button = Button(text="Установить напоминание", command=set)
 set_button.pack(pady=10)
 
-
+check()
 
 window.mainloop()
